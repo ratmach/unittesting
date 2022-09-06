@@ -1,0 +1,2 @@
+class ThirdPartyIntegrationClient(WebClient):
+    pass
