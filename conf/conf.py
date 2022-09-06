@@ -1,6 +1,6 @@
 import os
 
-ENVIRONMENT = os.get()
+ENVIRONMENT = os.getenv("ENVIRONMENT")
 
 
 class Environments(Enum):
