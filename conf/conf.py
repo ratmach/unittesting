@@ -1,4 +1,5 @@
 import os
+from enum import Enum
 
 ENVIRONMENT = os.getenv("ENVIRONMENT")
 
