@@ -28,3 +28,6 @@ pipenv install
 - unittest.mock
 - responses
 - factory-boy
+
+
+RATI MATCHAVARIANI
