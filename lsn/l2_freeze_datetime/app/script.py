@@ -23,42 +23,42 @@ def unfreeze_time():
 
 def clean_the_house():
     logger.info("Cleaning the house")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def repair_the_party_damage():
     logger.info("Repairing party damage")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def carve_pumpkins():
     logger.info("Carving pumpkins")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def steal_things_from_best_buy():
     logger.info("Stealing things from best buy")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def watch_titanic():
     logger.info("Watching titanic")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def dance():
     logger.info("Dancing")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def vacuum_mom_and_dad():
     logger.info("Vacuuming Beth and Jerry")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def forget_to_put_mattress_under_mr_benson():
     logger.info("Forgetting to put the mattress under mr Benson")
-    time.sleep(0.05)
+    time.sleep(0.005)
 
 
 def freeze_time():

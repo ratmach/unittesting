@@ -27,6 +27,6 @@ jobs:
         run: pipenv install --dev
 
       - name: Run Test Suite
-        run: pipenv run pytest -x
+        run: pipenv run pytest lsn/$(pipenv run python helper/gh_actions.py ${{ github.event.pull_request.title }})*/tests
         env:
           ENVIRONMENT: INTEGRATION

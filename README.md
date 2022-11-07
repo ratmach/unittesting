@@ -11,6 +11,7 @@ pipenv install
 - checkout a new branch (format `name.surname-dev`)
 - for each section checkout a new branch (format `name.surname-dev-part_number`)
 - to submit the work open up a pull request to `name.surname-dev` branch
+- !!! important please use `L<number> lesson name` in PR title for automated tests to run!!!
 
 ##Concepts Covered:
 - basic unit testing
