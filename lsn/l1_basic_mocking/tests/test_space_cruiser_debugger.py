@@ -11,6 +11,7 @@ class TestSpaceCruiserDebugger(TestCase):
 
     # Exercise l1_B
     def test_space_cruiser_debugging(self):
+        print("nope")
         # hint: review debug_space_cruiser and mock.patch specific functions
         self.assertFalse(debug_space_cruiser())
         # hint: review debug_space_cruiser and mock.patch specific functions
