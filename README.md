@@ -10,7 +10,7 @@ pipenv install
 
 ##Submitting Work:
 - checkout a new branch (format `name.surname`)
-- add your name and surname here (NAME SURNAME)
+- add your name and surname here (Aleksandar Fa)
 - commit, push
 - for each section checkout a new branch (format `name.surname-l<number>`)
 - to submit the work open up a pull request to `name.surname` branch
