@@ -1,6 +1,6 @@
 from unittest import TestCase
 from unittest.mock import patch
-from lsn.l1_basic_mocking.app.script import debug_space_cruiser, get_universe_hash, check_microverse_battery
+from lsn.l1_basic_mocking.app.script import debug_space_cruiser, get_universe_hash, check_microverse_battery, check_quantum_carburetor
 
 
 class TestSpaceCruiserDebugger(TestCase):
@@ -22,6 +22,17 @@ class TestSpaceCruiserDebugger(TestCase):
         # hint: review debug_space_cruiser and mock.patch specific functions
         mock_check_quantum_fun.return_value = True
         self.assertTrue(debug_space_cruiser())
+
+    # Exercise l1_B_1
+    def test_space_cruiser_debugging_2(self):
+        # hint: review debug_space_cruiser and mock.patch specific functions
+        with (patch('lsn.l1_basic_mocking.app.script.get_universe_hash', return_value=67132),
+              patch('lsn.l1_basic_mocking.app.script.check_quantum_carburetor', return_value=False)):
+            self.assertFalse(debug_space_cruiser())
+        # hint: review debug_space_cruiser and mock.patch specific functions
+        with (patch('lsn.l1_basic_mocking.app.script.get_universe_hash', return_value=67132),
+              patch('lsn.l1_basic_mocking.app.script.check_quantum_carburetor', return_value=True)):
+            self.assertTrue(debug_space_cruiser())
 
     # Exercise l1_C
     @patch('lsn.l1_basic_mocking.app.script.get_universe_hash')
