@@ -24,3 +24,13 @@ class TestOOPSpaceCruiserDebugger(OOPOnlyTestCase):
         # hint: review debug_space_cruiser and mock.patch specific functions
         mock_check_quantum_carburetor.return_value = True
         self.assertTrue(cruiser.debug_space_cruiser())
+
+    # Exercise l1_C1
+    def test_check_microverse_battery(self):
+        cruiser = SpaceCruiser(universe=UNIVERSE, logger=logging.getLogger(__name__))
+
+        with patch.object(SpaceCruiser, 'get_universe_hash', return_value=67123):
+            self.assertEqual(cruiser.check_microverse_battery(), True)
+
+            with self.assertRaises(Exception):
+                cruiser.check_microverse_battery(4)
